@@ -1,0 +1,279 @@
+/*Estilos Gerais*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #004BFF;
+    color: #fff;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*Menu*/
+
+.menu {
+    background: rgb(5, 163, 255);
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.navbar .navbar-nav {
+    margin: auto 20px;
+}
+
+.navbar .nav-item a {
+    color: #fff;
+}
+
+.navbar .nav-item a:hover {
+    color: rgb(0, 0, 0);
+    display: block;
+    width: ;
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: 25px;
+}
+
+/*Introdução*/
+
+.introducao {
+    width: 100%;
+    min-height: 300px;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.introducao h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 2px #474747;
+}
+
+.introducao p {
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: .1em;
+    text-shadow: 3px 2px 2px #474744;
+}
+
+.foto_perfil {
+    margin: 30px auto;
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+
+.descricao, .descricao1 {
+    display: block;
+    text-align: center;
+    text-shadow: 3px 2px 2px #474747;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.descricao:before {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 4px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+.descricao2 {
+    display: block;
+    text-align: center;
+    text-shadow: 3px 2px 2px #474747;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.fundo_frase {
+    background: url(../img/fundo.jpg) no-repeat center;
+    background-size: cover;
+    margin: 50px 0;
+}
+
+.frase {
+    padding: 30px 0;
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.frase p {
+    text-align: center;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.frase cite {
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+    font-style: normal;
+}
+
+.titulo {
+    margin: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.titulo:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+.carousel {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+#contato {
+    background: rgb(5, 163, 255);
+}
+
+.subtitulo {
+    padding: 20px 0px 20px 0px;
+}
+
+span {
+    display: block;
+    font-size: 0.875rem;
+    font-family: "IBMPlexMonoItalic", monospace;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-style: italic;
+}
+
+.form_direito a {
+    display: block;
+    font-size: 0.875rem;
+    font-family: "IBMPlexMonoItalic", monospace;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.form_direito a:hover {
+    color: #000000;
+}
+
+.pseudo_elemento:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #9B30Ff;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    margin-right: 6px;
+}
+
+.dados {
+    margin: 20px 10px 20px 30px;
+}
+
+footer {
+    background: rgb(1, 1, 99);
+}
+
+.redes_footer {
+    padding: 20px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.footer p {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.footer a {
+    display: inline-block;
+    padding: 10px 20px 0px 20px;
+    margin: 5px;
+    border: 4px solid #fff;
+}
+
+.footer a:hover {
+    border-color: #9B30Ff;
+}
+
+.footer p a:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;   
+    margin: 14px auto 10px auto;
+}
+
+/*Animação javascript*/
+
+/* 6 Adicione o CSS Essêncial abaixo */
+
+[data-anime] {
+  opacity: 0;
+}
+
+.fadeInDown {
+  transform: translate3d(0,-20px,0);
+}
+
+.anime {
+  opacity: 1;
+  transform: none;
+  transition: transform .8s, opacity .8s;
+}
+
+/* 7 CSS personalizado dependendo da animação desejada
+.fadeInDown {
+    transform: translate3d(0,-20px,0);
+  }
+  .fadeInUp {
+    transform: translate3d(0,20px,0);
+  }
+  .fadeInRight {
+    transform: translate3d(20px,0,0);
+  }
+  .fadeInLeft {
+    transform: translate3d(-20px,0,0);
+  }
+ */
